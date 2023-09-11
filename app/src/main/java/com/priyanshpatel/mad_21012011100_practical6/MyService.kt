@@ -19,7 +19,7 @@ class MyService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
 
         if (!this::player.isInitialized) {
-            player = MediaPlayer.create(this,R.raw.song)
+            player = MediaPlayer.create(this,R.raw.danza)
         }
 
         if (intent != null) {
